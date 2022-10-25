@@ -55,6 +55,13 @@ const row = document.querySelector(".row");
 
 for(let individual of staff){
   //console.log(individual);
+  
+  for(let index in staff){
+    console.log('ci stai');
+    let obj = staff[index];
+    let output = `<li>${obj.personality[index]}</li>`;
+    console.log(output)
+  }
 
   let card = `
   
@@ -67,6 +74,9 @@ for(let individual of staff){
       <div class="card-body">
         <p class="card-text text-center">${individual.name}</p>
         <p class="card-text text-center">${individual.role}</p>
+        <ul>
+          ${output}
+        </ul>
       </div>
     </div>
   
@@ -74,4 +84,15 @@ for(let individual of staff){
   `
   row.innerHTML += card;
 }
+
+
+
+staff[0].personality = ['Leader','Concentrato','Grande uomo'];
+staff[1].personality = ['Empatica','Sorridente'];
+staff[2].personality = ['Solare','concentrato'];
+staff[3].personality = ['Geniale'];
+staff[4].personality = ['Particolare','Pigro'];
+staff[5].personality = ['Pazza','Spensierata'];
+// console.log(staff[0].personality);
+
 
