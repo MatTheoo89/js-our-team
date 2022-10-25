@@ -32,3 +32,22 @@ const staff = [
     image: 'barbara-ramos-graphic-designer.jpg',
   }
 ];
+
+// MILESTONE 0 Mi restituisce in console ogni singolo onj come array
+console.log(staff);
+
+// MILESTONE 1 Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+for(let individual of staff){
+  const output = `${individual.name} - ${individual.role} - assets/img/${individual.image} `
+  console.log(output);
+}
+
+// MILESTONE 2 Stampare le stesse informazioni su DOM sotto forma di stringhe
+const lista = document.querySelector('.lista')
+for(let individual of staff){
+  const output = `<li>${individual.name} - ${individual.role} - assets/img/${individual.image} </li>`
+  lista.innerHTML += output
+}
+
+// MILESTONE 3 Stampare delle card formattate contenete immagini e testo (La grafica fornita è solo un esempio ma sentitevi liberi di “graficare” come preferite)

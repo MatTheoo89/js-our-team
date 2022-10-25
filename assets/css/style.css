@@ -33,3 +33,7 @@ p.card-text:last-child {
 .card img:hover {
   transform: scale(1.1);
 }
+
+ul.lista {
+  margin-top: 100px;
+}
