@@ -8,7 +8,7 @@
 
 p.card-text:first-child {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -17,7 +17,13 @@ p.card-text:last-child {
 }
 
 .card {
+  margin-bottom: 40px;
+}
+
+.card-image {
   overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-body {
@@ -28,10 +34,15 @@ p.card-text:last-child {
   transform: scale(1);
   max-width: 100%;
   transition: all .5s;
+  filter: brightness(.8);
+
 }
 
 .card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  border-radius: 10px;
+  filter: brightness(1);
+
 }
 
 ul.lista {
