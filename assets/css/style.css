@@ -1,0 +1,35 @@
+.main-wrapper {
+  height: 100vh;
+}
+
+.container .subtitle {
+  padding: 0 120px;
+}
+
+p.card-text:first-child {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+p.card-text:last-child {
+  font-size: .9rem;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-body {
+  z-index: 2;
+}
+
+.card img {
+  transform: scale(1);
+  max-width: 100%;
+  transition: all .5s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
